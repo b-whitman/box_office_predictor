@@ -1,4 +1,5 @@
 # Imports from 3rd party libraries
+import pandas as pd
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
@@ -19,7 +20,6 @@ column1 = dbc.Col(
             ## See You At The Movies!
             
             Thinking of investing in a feature film? Plug its projected runtime and genres into this model to help you decide whether or not it's worth your money!
-
             """
         ),
         dcc.Link(dbc.Button('Get Started', color='primary'), href='/predictions')
@@ -27,9 +27,8 @@ column1 = dbc.Col(
     md=4,
 )
 
-gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
+box_office = pd.read_csv('notebooks/box_office.csv')
+fig = px.scatter(box_office, x='Production_Budget', y='Worldwide_Gross', color='runtimeNumber', marginal_x='histogram')
 
 column2 = dbc.Col(
     [
