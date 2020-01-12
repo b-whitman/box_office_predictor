@@ -27,7 +27,7 @@ column1 = dbc.Col(
     md=4,
 )
 
-box_office = pd.read_csv('notebooks/box_office.csv')
+box_office = pd.read_csv('assets/box_office.csv')
 fig = px.scatter(box_office, x='Production_Budget', y='Worldwide_Gross', color='runtimeNumber', marginal_x='histogram')
 
 column2 = dbc.Col(

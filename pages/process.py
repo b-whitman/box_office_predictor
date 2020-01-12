@@ -40,6 +40,8 @@ column1 = dbc.Col(
             (I ran into a bug while converting my linear regression MAE from log-dollars to USD, so I report it here
             as log-dollars)
 
+            On my test set, my model scores 98.4 million dollars. Not a tremendous improvement, but an improvement!
+
             This model is useful for imagining how hype impacts a movie and for picking a release month. But its
             usefulness is limited. The MAE, though better than baseline, is admittedly still wicked high. If you're
             considering putting 30 million dollars into a film and someone tells you their model has an error of

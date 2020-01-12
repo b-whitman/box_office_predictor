@@ -6,14 +6,12 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-dash = "*"
 dash-bootstrap-components = "*"
-gunicorn = "*"
-plotly = "*"
-pandas = "*"
 joblib = "==0.14.0"
 xgboost = "==0.90"
 dash-daq = "*"
+plotly-express = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3"

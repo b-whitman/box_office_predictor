@@ -10,7 +10,7 @@ from dash.dependencies import Input, Output
 # Imports from this application
 from app import app
 
-box_office = pd.read_csv('notebooks/box_office.csv')
+box_office = pd.read_csv('assets/box_office.csv')
 box_office_comedy = box_office[box_office['Comedy'] == True]
 box_office_hyped = box_office[box_office['hyped'] == True]
 box_office_adventure = box_office[box_office['Adventure'] == True]
@@ -62,7 +62,7 @@ column1 = dbc.Col(
             It's good for your movie to resonate with audiences!
             '''
         ),
-        html.Img(src='assets/pdp_interact.PNG', className='img-fluid'),
+        html.Img(src='assets/interact.PNG', className='img-fluid'),
         dcc.Markdown(
             '''
             Finally, let's break the dataset down a little bit and examine how genre distinctions and hype impact the relationship

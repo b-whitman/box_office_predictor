@@ -6,7 +6,6 @@ import dash_html_components as html
 import dash_daq as daq
 import pandas as pd
 import numpy as np
-import locale
 from dash.dependencies import Input, Output
 from joblib import load
 
@@ -109,7 +108,8 @@ column1 = dbc.Col(
                 {'label': 'Thriller', 'value': 20},
                 {'label': 'War', 'value': 21},
                 {'label': 'Western', 'value': 22},
-            ]
+            ],
+            value=[17,18,22]
         )
     ],
     md=4,
