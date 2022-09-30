@@ -7,7 +7,7 @@ verify_ssl = true
 
 [packages]
 dash-bootstrap-components = "*"
-joblib = "==0.14.0"
+joblib = "==1.2.0"
 xgboost = "==0.90"
 dash-daq = "*"
 plotly-express = "*"
